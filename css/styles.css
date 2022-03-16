@@ -17,9 +17,13 @@ section {
 	text-align: right;
 }
 
-#content div.card-main {
+#content div.card-main, #content span {
 	color: #222222;
 	margin: 10px;
+}
+
+#content span {
+	color: #222222;
 }
 
 #content div.card-sub, #content p.card-text {
@@ -29,4 +33,53 @@ section {
 .form-group.required .control-label:after {
 	content: "*";
 	color: #C90000;
+}
+
+.custom-btn-sz, .custom-btn-sz:hover {
+	border: 1px solid #CCCCCC;
+	color: #888888;
+	border-radius: 0;
+	background-color: #FFFFFF;
+	width: 45px;
+	height: 45px;
+}
+
+.btn-check:active + .custom-btn-sz, .btn-check:checked + .custom-btn-sz {
+	border: 2px solid #222222;
+	color: #222222;
+	background-color: #FFFFFF;
+}
+
+.custom-btn-add {
+	border: 2px solid #222222;
+	color: #222222;
+	border-radius: 0;
+	font-weight: bold;
+	transition:all 0.2s ease-in-out;
+}
+
+.custom-btn-add:hover {
+	background-color: #222222;
+	color: #FFFFFF;
+}
+
+.navbar-nav .dropdown-menu {
+	position: absolute;
+	border-radius: 0;
+}
+.cart-dropdown {
+	width: 300px;
+	right: 0;
+	left: auto !important;
+}
+
+.cart-dropdown .card-cart{
+	 max-width: 300px;
+}
+.cart-dropdown .dropdown-item:hover, .cart-dropdown .dropdown-item:active {
+	background-color: #FFFFFF;
+}
+
+#navbarDropdown:hover, #navbarDropdown[aria-expanded='true'] {
+	color: #222222;
 }
